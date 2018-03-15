@@ -16,7 +16,6 @@ def sendmsg():
     print("your temperature is in danger")
     
 bot=telepot.Bot('Bot Token')
-bot.message_loop(handle)
 print ('im listening')
 
 while 1:
