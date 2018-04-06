@@ -208,7 +208,7 @@ def getConfigurations():
 	path = os.path.dirname(os.path.realpath(sys.argv[0]))
 
 	#get configs
-	configurationFile = path + '/config.json'
+	configurationFile = path + '/json.json'
 	configurations = json.loads(open(configurationFile).read())
 
 	return configurations
