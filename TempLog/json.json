@@ -1,0 +1,49 @@
+{
+"mysql":[{
+	"host":"192.168.200.130",
+	"user":"sa",
+	"password":"sa",
+	"database":"ebizos_db_201802060600"
+	}],
+"sensors":[{
+	"sensor1":"controlled environment",
+	"sensor2":"Inside"
+	}],
+"triggerlimits":[{
+	"sensor1lowlimit":"18",
+	"sensor2lowlimit":"18",
+	"sensor1highlimit":"27",
+	"sensor2highlimit":"27"
+	}],
+"humiditytriggers":[{
+	"sensor1_humidity_low_limit":"30",
+	"sensor1_humidity_high_limit":"60",
+	"sensor2_humidity_low_limit":"30",
+	"sensor2_humidity_high_limit":"60"
+	}],
+"sensorgpios":[{
+	"gpiosensor1":"22",
+	"gpiosensor2":"23"
+	}],
+"mailinfo":[{
+	"senderaddress":"ttemp3799@gmail.com",
+	"receiveraddress":"ttemp3799@gmail.com",
+	"username":"ttemp3799",
+	"password":"harith123",
+	"subjectmessage":"Info from temperature logger",
+	"subjectwarning":"Warning from temperature logger"
+	}],
+"sqlBackupDump":[{
+	"backupDumpEnabled":"y",
+	"backupHour":"23"
+	}],
+"connectionCheck":[{
+	"connectionCheckEnabled":"y",
+	"connectionCheckDay":"5",
+	"connectionCheckHour":"23"
+	}],
+"sensortype":"22",
+"sensoramount":"1",
+"sqlbackuppath":"/home/pi/DHT22-TemperatureLogger/Backups/",
+"adafruitpath":"/home/pi/Adafruit_Python_DHT/examples/AdafruitDHT.py"
+}
