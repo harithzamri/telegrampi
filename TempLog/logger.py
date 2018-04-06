@@ -6,6 +6,7 @@ from datetime import timedelta
 import json
 import subprocess
 import pymssql
+import MySQLdb
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
