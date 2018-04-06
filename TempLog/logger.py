@@ -5,7 +5,7 @@ import datetime
 from datetime import timedelta
 import json
 import subprocess
-import MySQLdb
+import pymssql
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
@@ -89,7 +89,7 @@ def databaseHelper(sqlCommand,sqloperation):
 	
 	data = ""
 	
-	db = MySQLdb.connect(host,user,password,database)
+	db = pymssql.connect(host,user,password,database)
         cursor=db.cursor()
 
 	if sqloperation == "Select":
