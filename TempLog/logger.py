@@ -92,10 +92,10 @@ def databaseHelper(sqlCommand,sqloperation):
 	
 	db = pyodbc.connect(
 		"Driver = ODBC Driver 17 for SQL Server;"
-		"Server = 192.168.200.130";
-		"UID=sa";
-		"PWD=gmtonline";
-		"Database=,ebizos_db_2018060600";
+		"Server = 192.168.200.130;"
+		"UID=sa;"
+		"PWD=gmtonline;"
+		"Database=ebizos_db_2018060600;"
 		"ColumnEncryption=Enabled;"
 		)
         cursor=db.cursor()
