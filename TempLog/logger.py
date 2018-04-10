@@ -90,7 +90,14 @@ def databaseHelper(sqlCommand,sqloperation):
 	
 	data = ""
 	
-	db = pyodbc.connect(host,user,password,database)
+	db = pyodbc.connect(
+		"Driver = ODBC Driver 17 for SQL Server;"
+		"Server = 192.168.200.130";
+		"UID=sa";
+		"PWD=gmtonline";
+		"Database=,ebizos_db_2018060600";
+		"ColumnEncryption=Enabled;"
+		)
         cursor=db.cursor()
 
 	if sqloperation == "Select":
