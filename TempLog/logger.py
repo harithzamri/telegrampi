@@ -90,7 +90,7 @@ def databaseHelper(sqlCommand,sqloperation):
 	
 	data = ""
 	
-	db = pymssql.connect(host,user,password,database)
+	db = pyodbc.connect(host,user,password,database)
         cursor=db.cursor()
 
 	if sqloperation == "Select":
