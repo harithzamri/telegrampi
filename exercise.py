@@ -2,7 +2,7 @@
  
 import MySQLdb 
  
-db = my.connect(host="192.168.200.130",
+db = MySQLdb.connect(host="192.168.200.130",
 user="sa",
 passwd="gmtonline",
 db="ebizos_db_201802060600"
